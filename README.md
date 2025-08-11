@@ -8,9 +8,6 @@ Minimal, unified repo to reproduce paper-based experiments on MRI brain tumor cl
 - `docs/` — Minimal documentation. `implementation_log.md` is the single source of logic and progress; `workflow.md` contains high-level task notes.
 - `Datasets/`, `brainTumorDataPublic_1766/`, `RCNN/` — Data and legacy content (ignored by Git).
 
-## Python Requirements
-Install scientific dependencies. (PyTorch is environment/GPU specific; see below.)
-
 ```bash
 pip install -r requirements.txt
 ```
@@ -20,26 +17,13 @@ pip install -r requirements.txt
 - h5py
 - opencv-python
 - scikit-learn
-
-## Installing PyTorch (pick one)
-- CPU only:
-```bash
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
-```
-- CUDA 12.1 (most common on recent NVIDIA drivers):
-```bash
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
-```
-- CUDA 11.8:
-```bash
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
-```
+- pytorch (https://pytorch.org/get-started/locally/)
 
 ## Running (disabled by default)
 - Classifier (arXiv:2102.03532v1):
   - Entry: `paper_implementation/runner.py`
   - Do not run unless you explicitly want to train.
-- Segmentation (Ranasinghe):
+- Segmentation:
   - Entry: `experiments/runner.py`
   - K-Fold training loop is commented to avoid accidental runs. Un-comment once specs are confirmed.
 
