@@ -1,0 +1,13 @@
+numpy
+h5py
+opencv-python
+scikit-learn
+scikit-image
+matplotlib
+tqdm
+pillow
+
+# Install PyTorch separately depending on your platform/GPU (see README):
+# torch
+# torchvision
+# torchaudio

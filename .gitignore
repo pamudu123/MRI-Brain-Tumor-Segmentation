@@ -1,0 +1,26 @@
+*.mat
+*.h5
+*.pth
+__pycache__/
+*.log
+*.tmp
+
+# Python cache/build
+.pytest_cache/
+.mypy_cache/
+*.egg-info/
+dist/
+build/
+.ipynb_checkpoints/
+
+
+Report1/
+Datasets/
+brainTumorDataPublic_1766/
+RCNN/
+
+
+
+docs/[Pamudu Ranasinghe]MRI Brain Tumor Localization and Segmentation.pdf
+docs/2102.03532v1.pdf
+paper_implementation/report_add.txt
