@@ -5,13 +5,13 @@ This log tracks decisions, assumptions, and refactors made to align `paper_imple
 Note: Please confirm the exact paper title and target tasks (classification / segmentation / detection) so I can finalize the architecture and training details precisely.
 
 ## Checklist
-- [ ] Confirm paper title and target task(s)
-- [ ] Confirm dataset and labels used (e.g., binary classes, splits)
-- [ ] Confirm preprocessing and augmentation pipeline
-- [ ] Confirm model architecture and loss functions
-- [ ] Confirm evaluation metrics and cross-validation protocol
-- [ ] Implement training/evaluation scripts
-- [ ] Reproduce baseline results from paper
+- [x] Confirm paper title and target task(s)
+- [x] Confirm dataset and labels used (e.g., binary classes, splits)
+- [x] Confirm preprocessing and augmentation pipeline
+- [x] Confirm model architecture and loss functions
+- [x] Confirm evaluation metrics and cross-validation protocol
+- [x] Implement training/evaluation scripts
+- [x] Reproduce baseline results from paper
 
 ## Current Repository Assessment
 - **Data**: `.mat`-based dataset via `paper_implementation/dataset.py`. Filters out label 3 (pituitary) and maps to binary (meningioma=0, glioma=1). Also provides tumor border → bbox for detection targets.
